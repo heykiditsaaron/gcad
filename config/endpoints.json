@@ -1,0 +1,6 @@
+{
+  "/shop-sync": {
+    "type": "local", 
+    "path": "./shops"
+  }
+}

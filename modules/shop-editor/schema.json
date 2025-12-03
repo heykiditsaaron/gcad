@@ -1,0 +1,5 @@
+{
+  "item": "string",
+  "price": "number",
+  "lore": ["string"]
+}

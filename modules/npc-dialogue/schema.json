@@ -1,0 +1,4 @@
+{
+  "npc": "string",
+  "dialogue": ["string"]
+}
