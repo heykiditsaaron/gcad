@@ -1,0 +1,28 @@
+{
+  "appName": "GameWeenies Cobblemon Adventure Dashboard",
+  "logging": {
+    "verbose": true,
+    "logFile": "logs/sync.log"
+  },
+  "endpoints": [
+    {
+      "path": "/api/v1/sync/shop",
+      "module": "shop",
+      "defaultTarget": "local_test"
+    }
+  ],
+  "targets": {
+    "local_test": {
+      "driver": "local",
+      "remotePath": "./data/remote_shops"
+    },
+    "game1": {
+      "driver": "sftp",
+      "host": "game-server.example",
+      "port": 22,
+      "user": "ftpuser",
+      "passEnv": "SFTP_GAME1_PASS",
+      "remotePath": "/home/mc/plugins/shops"
+    }
+  }
+}
